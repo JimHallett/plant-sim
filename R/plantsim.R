@@ -1,6 +1,6 @@
 library(RODBC)
 library(vegan)
-#library(BiodiversityR)
+library(BiodiversityR)
 
 channel <- odbcConnect("discountasp")
 smtot <-sqlFetch(channel, "RNCoverinvasivesaveraged")  # read view from SQL database
